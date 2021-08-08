@@ -4,6 +4,8 @@ body {
     padding: 5px 30px;
 }
 
+/* HEADER AND BUTTON */
+
 header {
     margin: 30px auto;
     padding: 0 15px;
@@ -43,6 +45,8 @@ header button:active {
     transform: translateY(4px);
 }
 
+/* MAIN CONTENT WITH BOOK LIST */
+
 .main {
     display: flex;
     justify-content: center;
@@ -56,7 +60,7 @@ header button:active {
 }
 
 .container .card {
-    background: #e7dfda;
+    background: white;
     width: 215px;
     height: 260px;
     border-radius: 2px;
@@ -71,22 +75,23 @@ header button:active {
     font-weight: 600;
     word-break: break-word;
     transition: all .3s;
+    box-shadow: inset 0 0 0 4px rgb(172, 141, 141);
 }
 
-.container .card:hover {
-    box-shadow: inset 0 0 0 4px rgb(185, 128, 128);
+.card:hover {
+    box-shadow: inset 0 0 0 7px rgb(185, 128, 128);
 }
 
-.container .card p {
+.card p {
     margin-bottom: 15px;
 }
 
-.container .card .book-title {
+.card .book-title {
     color: rgb(199, 91, 91);
     font-size: 19px;
 }
 
-.container .read-button {
+.read-button {
     padding: 10px;
     width: 150px;
     border: none;
@@ -99,22 +104,105 @@ header button:active {
     cursor: pointer;
 }
 
-.container .read-button:hover {
+.read-button:hover {
     background: #709448;
 }
 
-.container .remove-button {
+.remove-button {
     border: none;
     border-radius: 50%;
     height: 50px;
-    background-color: #E7DFDA;
-    color: rgb(195, 46, 46);
+    background-color: white;
+    color: rgb(199, 53, 53);
     font-weight: 800;
     padding: none;
     cursor: pointer;
     font-size: 30px;
 }
 
-.container .remove-button:hover {
-    color: rgb(189, 21, 21);
+.remove-button:hover {
+    color: rgb(134, 13, 13);
+}
+
+/* MODAL */
+
+.modal-add {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4);
+}
+
+/* MODAL FORM */
+
+.modal-content {
+    background: rgb(245, 220, 220);
+    border-radius: 3px;
+    height: 450px;
+    width: 300px;
+    margin: 15% auto;
+    padding: 25px;
+    border: none;
+    text-align: center;
+}
+
+.title {
+    color:#523737;
+    font-weight: 900;
+    font-size: 28px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.input-container {
+    height: 50px;
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+
+.ic1 {
+    margin-top: 30px;
+}
+
+.ic2 {
+    margin-top: 30px;
+}
+
+.input {
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    height: 100%;
+    font-size: 18px;
+    padding: 4px 20px 0;
+    color: rgb(56, 56, 56);
+}
+
+.submit {
+    width: 80%;
+    height: 50px;
+    border: none;
+    border-radius: 12px;
+    background: #8aad61;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.submit:active {
+    background: #709448;
+}
+
+.read-checkbox {
+    position: relative;
+    color:#755959;
+    font-weight: 600;
+    font-size: 19px;
+    margin: 35px 0;
 }
