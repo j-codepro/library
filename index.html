@@ -16,6 +16,7 @@
     </header>
     <div class="main">
         <div class="container">
+            <!--
             <div class="card">
                 <p class="book-title">Title</p>
                 <p>Author</p>
@@ -23,6 +24,7 @@
                 <button class="read-button">Read</button>
                 <button class="remove-button">&times</button>
             </div>
+            -->
         </div>
     </div>
     <div class="modal-add">
@@ -31,12 +33,10 @@
                 <div class="title">Add a book</div>
                 <div class="input-container ic1">
                   <input id="title" class="input" type="text" placeholder="Title" required />
-                  <div class="cut"></div>
                   <label for="title" class="placeholder"></label>
                 </div>
                 <div class="input-container ic2">
                   <input id="author" class="input" type="text" placeholder="Author" required />
-                  <div class="cut"></div>
                   <label for="title" class="placeholder"></label>
                 </div>
                 <div class="input-container ic2">
@@ -45,9 +45,9 @@
                 </div>
                 <div class="read-checkbox">
                   <label for="read" class="read">Have you read it ?</label>
-                  <input type="checkbox" id="read" class="read" value="read">
+                  <input type="checkbox" id="read" name="read">
                 </div>
-                <button type="text" class="submit">Submit</button>
+                <button type="submit" class="submit" id="submitBtn">Submit</button>
             </form>
         </div>
     </div>
