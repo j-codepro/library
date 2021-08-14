@@ -1,6 +1,9 @@
+* {
+    font-family: 'Rokkitt', serif;
+}
+
 body {
     background:#cfb7b6;
-    font-family: Arial, Helvetica, sans-serif;
     padding: 5px 30px;
 }
 
