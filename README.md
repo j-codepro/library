@@ -7,4 +7,4 @@ Projet de librairie responsive, nous pouvons ajouter des livres dynamiquement, a
 - un nombre de page
 - on peut également préciser si le livre est lu ou pas
 
-Une fois le livre ajouté il est possible d'appuyer sur le bouton du livre pour repréciser si on a lu ou pas ce livre.
+Une fois le livre ajouté il est possible d'appuyer sur le bouton du livre pour repréciser si on a lu ou pas ce livre, mais également de le supprimer.
