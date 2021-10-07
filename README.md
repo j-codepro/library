@@ -1,5 +1,5 @@
 # library
-[Live Demo](https://j-codepro.github.io/library/)
+[Live Demo](https://jeremy-mairey.github.io/library/)
 
 Projet de librairie responsive, nous pouvons ajouter des livres dynamiquement, avec une modale et un formulaire ou il est nécessaire (gestion des messages d'erreurs) d'insérer :
 - un titre
